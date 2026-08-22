@@ -1,0 +1,108 @@
+# Central project configuration -- Palisades Urban Wildfire Resilience
+# All scripts read paths and parameters from this file. Do not hard-code.
+
+project:
+  name: palisades_urban_wildfire_resilience
+  random_seed: 42
+
+crs:
+  analysis: "EPSG:26911"    # NAD83 / UTM zone 11N (metric)
+  geographic: "EPSG:4326"
+
+study_area:
+  incident_name: "PALISADES"          # matched case-insensitively in WFIGS
+  dins_incident_like: "PALISADES"     # DINS INCIDENTNAME filter
+  event_start: "2025-01-07"
+  event_end: "2025-01-31"             # containment (event context window end)
+  buffer_m: 2000
+
+temporal:
+  prefire_window: ["2024-10-01", "2025-01-06"]
+  duringfire_window: ["2025-01-07", "2025-01-28"]  # ignition through day before postfire (end exclusive in GEE)
+  baseline_years: [2022, 2023, 2024]
+  baseline_months: [10, 11, 12]       # Oct-Dec seasonal baseline
+  postfire_window: ["2025-01-28", "2025-02-28"]
+  recovery_start: "2025-02-01"
+  recovery_end: "2026-07-31"
+  antecedent_climate_window: ["2024-04-01", "2025-01-31"]
+
+gee:
+  project: null                       # use default credentials
+  s2_collection: "COPERNICUS/S2_SR_HARMONIZED"
+  s2_cloud_prob: "COPERNICUS/S2_CLOUD_PROBABILITY"
+  cloud_prob_threshold: 40
+  dem: "USGS/3DEP/10m"
+  landsat_l2: ["LANDSAT/LC08/C02/T1_L2", "LANDSAT/LC09/C02/T1_L2"]
+  gridmet: "IDAHO_EPSCOR/GRIDMET"
+  era5_land: "ECMWF/ERA5_LAND/HOURLY"
+  export_scale_m: 10
+  dem_scale_m: 10
+
+dins:
+  rest_url: "https://services1.arcgis.com/jUJYIo9tSA7EHvfZ/arcgis/rest/services/POSTFIRE_MASTER_DATA_SHARE/FeatureServer/0"
+  damage_order:
+    - "No Damage"
+    - "Affected (>0-10%)"
+    - "Minor (10-25%)"
+    - "Major (25-50%)"
+    - "Destroyed (>50%)"
+  excluded_damage: ["Inaccessible"]
+  residential_categories:
+    - "Single Residence"
+    - "Multiple Residence"
+    - "Mixed Commercial/Residential"
+
+wfigs:
+  rest_url: "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Interagency_Perimeters/FeatureServer/0"
+
+landfire:
+  lfps_url: "https://lfps.usgs.gov/api/job/submit"
+  products: ["250FBFM40", "250CC"]     # LF 2024 update (LF 2.5.0), fire behavior fuel model 40 + canopy cover
+  version_note: "LF 2024 (LF_250) requested; actual delivered version recorded in manifest"
+
+features:
+  rings_m: [[0, 30], [30, 100], [100, 300]]
+  density_radii_m: [30, 100, 300]
+  wildland_fuel_classes_fbfm40: ["GR", "GS", "SH", "TU", "TL", "SB"]  # burnable wildland fuel prefixes
+
+model:
+  outcome_positive: "Destroyed (>50%)"
+  spatial_block_size_m: 1000
+  n_folds: 5
+  test_metrics: ["roc_auc", "pr_auc", "balanced_accuracy", "f1", "brier"]
+  xgb_params_grid:
+    max_depth: [3, 4, 6]
+    learning_rate: [0.05, 0.1]
+    n_estimators: [300, 600]
+    subsample: [0.8]
+    colsample_bytree: [0.8]
+    min_child_weight: [5]
+  logistic_C: [0.01, 0.1, 1.0, 10.0]
+
+burn_severity:
+  dnbr_scale: 1000               # dNBR reported in scaled units (x1000)
+  severity_breaks: [-100, 99, 269, 439, 2000]   # USGS/Key & Benson thresholds (scaled dNBR)
+  severity_labels: ["Unburned/Low", "Low", "Moderate", "High"]
+
+census:
+  acs_year: 2023
+  acs_dataset: "acs/acs5"
+  state_fips: "06"
+  county_fips: "037"
+  svi_url: "https://svi.cdc.gov/Documents/Data/2022/csv/states/California.csv"
+  svi_year: 2022
+
+paths:
+  data_raw: "data/raw"
+  data_interim: "data/interim"
+  data_processed: "data/processed"
+  data_external: "data/external"
+  data_metadata: "data/metadata"
+  outputs_figures: "outputs/figures"
+  outputs_tables: "outputs/tables"
+  outputs_maps: "outputs/maps"
+  outputs_qa: "outputs/qa"
+  outputs_diag: "outputs/model_diagnostics"
+  outputs_alt_models: "outputs/alternative_models"
+  outputs_logs: "outputs/logs"
+  manifest: "data/data_manifest.csv"

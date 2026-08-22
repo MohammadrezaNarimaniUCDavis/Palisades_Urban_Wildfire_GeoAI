@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this software or derived data, please cite it as below."
+type: software
+title: "Palisades Urban Wildfire GeoAI: replication code"
+authors:
+  - family-names: Farajpoor
+    given-names: Parastoo
+    affiliation: "Department of Biological and Agricultural Engineering, University of California, Davis"
+  - family-names: Narimani
+    given-names: Mohammadreza
+    email: mnarimani@ucdavis.edu
+    affiliation: "Department of Biological and Agricultural Engineering, University of California, Davis"
+version: "1.0.0"
+date-released: "2026-08-22"
+license: MIT
+repository-code: "https://github.com/MohammadrezaNarimaniUCDavis/Palisades_Urban_Wildfire_GeoAI"
+abstract: >-
+  Public replication package for a spatially validated GeoAI analysis of
+  structure destruction during the January 2025 Palisades Fire, linking CAL FIRE
+  DINS inspections to pre-fire Sentinel-2 vegetation amount/moisture, Landsat
+  temperature, LANDFIRE fuels, terrain, and dated OpenStreetMap building
+  arrangement under random and 1 km spatial-block cross-validation.
+keywords:
+  - urban wildfire
+  - structure loss
+  - GeoAI
+  - spatial cross-validation
+  - Sentinel-2
+  - Palisades Fire
+  - building density
+  - vegetation moisture

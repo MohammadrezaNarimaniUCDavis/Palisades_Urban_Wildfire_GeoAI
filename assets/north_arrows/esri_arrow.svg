@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Esri layout north arrow: elongated arrow shaft + head -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 72" width="32" height="72">
+  <polygon points="16,4 8,28 16,22 24,28" fill="#252525"/>
+  <rect x="14" y="22" width="4" height="32" fill="#252525"/>
+  <text x="16" y="68" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#252525">N</text>
+</svg>

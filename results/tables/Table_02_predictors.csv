@@ -1,0 +1,38 @@
+Block,Variable,Definition,Source,Support
+Terrain (M0),elevation_pt,Elevation at structure (m),3DEP 10 m,point
+Terrain (M0),slope_deg_pt,Slope (degrees),3DEP 10 m,point
+Terrain (M0),northness_pt,cos(aspect),3DEP 10 m,point
+Terrain (M0),eastness_pt,sin(aspect),3DEP 10 m,point
+Terrain (M0),tpi300_pt,Topographic position index (300 m),3DEP 10 m,point
+Terrain (M0),tri_pt,Terrain ruggedness index,3DEP 10 m,point
+Terrain (M0),dist_wildland_m,Distance to nearest wildland fuel pixel (m),LANDFIRE FBFM40,point
+Vegetation & fuels (M1),ndvi_pre_r0_30,NDVI,Sentinel-2 10 m,0-30 m ring
+Vegetation & fuels (M1),ndvi_pre_r30_100,NDVI,Sentinel-2 10 m,30-100 m ring
+Vegetation & fuels (M1),ndvi_pre_r100_300,NDVI,Sentinel-2 10 m,100-300 m ring
+Vegetation & fuels (M1),ndmi_pre_r0_30,NDMI,Sentinel-2 10 m,0-30 m ring
+Vegetation & fuels (M1),ndmi_pre_r30_100,NDMI,Sentinel-2 10 m,30-100 m ring
+Vegetation & fuels (M1),ndmi_pre_r100_300,NDMI,Sentinel-2 10 m,100-300 m ring
+Vegetation & fuels (M1),ndvi_anom_r0_30,NDVI anomaly (pre minus 2022-2024 baseline),Sentinel-2 10 m,0-30 m ring
+Vegetation & fuels (M1),ndvi_anom_r30_100,NDVI anomaly (pre minus 2022-2024 baseline),Sentinel-2 10 m,30-100 m ring
+Vegetation & fuels (M1),ndvi_anom_r100_300,NDVI anomaly (pre minus 2022-2024 baseline),Sentinel-2 10 m,100-300 m ring
+Vegetation & fuels (M1),ndmi_anom_r0_30,NDMI anomaly (pre minus 2022-2024 baseline),Sentinel-2 10 m,0-30 m ring
+Vegetation & fuels (M1),ndmi_anom_r30_100,NDMI anomaly (pre minus 2022-2024 baseline),Sentinel-2 10 m,30-100 m ring
+Vegetation & fuels (M1),ndmi_anom_r100_300,NDMI anomaly (pre minus 2022-2024 baseline),Sentinel-2 10 m,100-300 m ring
+Vegetation & fuels (M1),lst_pre_r30_100,Land surface temperature (deg C),Landsat 30 m,30-100 m ring
+Vegetation & fuels (M1),lst_pre_r100_300,Land surface temperature (deg C),Landsat 30 m,100-300 m ring
+Vegetation & fuels (M1),canopy_cover_r0_30,Canopy cover (%),LANDFIRE 30 m,0-30 m ring
+Vegetation & fuels (M1),canopy_cover_r30_100,Canopy cover (%),LANDFIRE 30 m,30-100 m ring
+Vegetation & fuels (M1),canopy_cover_r100_300,Canopy cover (%),LANDFIRE 30 m,100-300 m ring
+Vegetation & fuels (M1),fuel_wildland_r0_30,Wildland burnable fuel fraction,LANDFIRE 30 m,0-30 m ring
+Vegetation & fuels (M1),fuel_wildland_r30_100,Wildland burnable fuel fraction,LANDFIRE 30 m,30-100 m ring
+Vegetation & fuels (M1),fuel_wildland_r100_300,Wildland burnable fuel fraction,LANDFIRE 30 m,100-300 m ring
+Built environment (M2),nn_building_dist_m,Edge distance to nearest neighboring building (m),OSM buildings 2025-01-01,structure
+Built environment (M2),footprint_area_m2,Matched building footprint area (m2),OSM buildings,structure
+Built environment (M2),bld_count_r30,Building count within 30 m,OSM buildings,30 m disk
+Built environment (M2),bld_count_r100,Building count within 100 m,OSM buildings,100 m disk
+Built environment (M2),bld_count_r300,Building count within 300 m,OSM buildings,300 m disk
+Built environment (M2),dist_road_m,Distance to nearest drivable road (m),OSM roads 2025-01-01,point
+Built environment (M2),road_len_r300_m_per_km2,Road length density within 300 m,OSM roads,300 m disk
+Built environment (M2),dist_deadend_m,Distance to nearest dead-end node (m),OSM roads,point
+Built environment (M2),yearbuilt,Year built (assessor),DINS/assessor,structure
+Built environment (M2),assessed_value_log,log10 assessed improved value,DINS/assessor,structure

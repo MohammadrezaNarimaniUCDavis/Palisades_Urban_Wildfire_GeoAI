@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ISO 19139 / simple publication north arrow -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 56" width="40" height="56">
+  <text x="20" y="10" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#252525">N</text>
+  <polygon points="20,14 8,42 32,42" fill="#252525"/>
+</svg>

@@ -1,0 +1,4 @@
+model,morans_i,p_sim
+spatial_M3_xgb,0.5011907757997857,0.005
+spatial_M3_logit,0.47785130617687194,0.005
+spatial_M0_xgb,0.5472349710366834,0.005

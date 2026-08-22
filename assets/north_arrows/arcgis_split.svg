@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ArcGIS split chevron: white left / black right, N below -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 64" width="48" height="64">
+  <polygon points="24,6 6,36 24,28" fill="#ffffff" stroke="#252525" stroke-width="1.2"/>
+  <polygon points="24,6 24,28 42,36" fill="#252525" stroke="#252525" stroke-width="1.2"/>
+  <text x="24" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#252525">N</text>
+</svg>

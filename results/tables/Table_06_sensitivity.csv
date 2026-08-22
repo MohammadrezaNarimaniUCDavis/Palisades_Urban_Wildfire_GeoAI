@@ -1,0 +1,10 @@
+Dimension,Specification,Spatial-CV AUC (SD),PR-AUC,N predictors
+Ring scale,0-30 m,0.721 (0.073),0.740,21
+Ring scale,30-100 m,0.744 (0.060),0.768,22
+Ring scale,100-300 m,0.753 (0.042),0.767,22
+Ring scale,All scales,0.756 (0.051),0.775,37
+Block size,500 m,0.809 (0.057),0.826,37
+Block size,1000 m,0.756 (0.051),0.775,37
+Block size,2000 m,0.765 (0.044),0.783,37
+Outcome/population,"Destroyed+Major, residential",0.765 (0.047),0.782,37
+Outcome/population,"Destroyed, all structures",0.759 (0.053),0.735,37

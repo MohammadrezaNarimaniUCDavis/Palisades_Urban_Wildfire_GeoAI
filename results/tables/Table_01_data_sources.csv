@@ -1,0 +1,12 @@
+Dataset,Provider,Resolution,Temporal window used,Variables derived,Analytical role
+CAL FIRE DINS,CAL FIRE / California Open Data,Point (structure),"Post-fire inspections, 2025","Damage class, structure category, year built",Primary outcome
+WFIGS Interagency Fire Perimeters,NIFC,Polygon,Final 2025 perimeter,Fire perimeter geometry,Study area definition
+Sentinel-2 L2A (via GEE),Copernicus/ESA,10-20 m,Oct 2024-Jan 2025 (pre); Oct-Dec 2022-2024 (baseline); Jan-Feb 2025 (post); monthly to Jul 2026,"NDVI, NDMI, NBR/dNBR",Pre-fire vegetation predictors; severity & recovery
+Landsat 8/9 C2 L2 (via GEE),USGS,30 m,Oct 2024-Jan 2025,Land surface temperature,Pre-fire thermal predictor
+LANDFIRE LF2024,USGS/USDA-FS,30 m,2024 update (pre-fire vintage),"FBFM40 fuel models, canopy cover",Fuel type/continuity predictors
+USGS 3DEP DEM (via GEE),USGS,10 m,Static,"Elevation, slope, aspect, TPI, TRI",Terrain predictors
+OpenStreetMap (Overpass attic),OSM contributors (ODbL),Feature,Snapshot 2025-01-01 (pre-fire),"Buildings, roads, facilities",Built-environment predictors; accessibility
+gridMET (via GEE),Climatology Lab,~4 km daily,Apr 2024-Jan 2025; Oct-Dec 1980-2024,"Precipitation, VPD, fuel moisture, ERC",Antecedent climate context
+ERA5-Land (via GEE),ECMWF/Copernicus,~9 km hourly,"Jan 5-15, 2025","Wind, temperature, dewpoint",Event weather context
+CDC/ATSDR SVI 2022,CDC/ATSDR,Census tract,2022 release,"Vulnerability themes, vehicle access, age",Community context (Track B)
+TIGER/Line 2023,U.S. Census Bureau,Tract/block group,2023 vintage,Census geometries,Community units

@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+.env
+.env.*
+*.token
+catboost_info/
+cache/
+tmp/
+data/raw/
+data/interim/

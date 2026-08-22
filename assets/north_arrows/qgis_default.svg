@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- QGIS default north arrow -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 60" width="44" height="60">
+  <polygon points="22,8 10,40 22,32 34,40" fill="#252525"/>
+  <text x="22" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#252525">N</text>
+</svg>

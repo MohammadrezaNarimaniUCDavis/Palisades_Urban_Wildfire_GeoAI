@@ -1,0 +1,561 @@
+{
+  "dins": {
+    "n_raw": 12137,
+    "missing_or_invalid_geometry": 0,
+    "coord_field_mismatch_gt_100m": 0,
+    "duplicate_globalid": 0,
+    "duplicate_location_0p1m": 0,
+    "n_after_dedup": 12137,
+    "damage_counts": {
+      "Destroyed (>50%)": 6845,
+      "No Damage": 4261,
+      "Affected (>0-10%)": 732,
+      "Minor (10-25%)": 171,
+      "Major (25-50%)": 72,
+      "Inaccessible": 56
+    },
+    "category_counts": {
+      "Single Residence": 9507,
+      "Other Minor Structure": 1799,
+      "Multiple Residence": 415,
+      "Nonresidential Commercial": 343,
+      "Infrastructure": 62,
+      "Mixed Commercial/Residential": 11
+    },
+    "inside_perimeter": 10484,
+    "outside_perimeter_within_study": 1653,
+    "outside_study_area": 0,
+    "yearbuilt_missing_or_zero": 502,
+    "yearbuilt_range": [
+      1913.0,
+      2022.0
+    ],
+    "incidentstart_range": [
+      "2025-01-07 00:00:00",
+      "2025-01-09 00:00:00"
+    ],
+    "n_modeling_all": 12081,
+    "n_modeling_residential": 9883,
+    "destroyed_rate_residential": 0.5631893149853283
+  },
+  "sample": {
+    "n_residential": 9883,
+    "n_destroyed": 5566,
+    "destroyed_rate": 0.5632,
+    "median_yearbuilt": 1962.0,
+    "median_nn_dist": 2.6,
+    "median_bld_r100": 34.0
+  },
+  "performance": {
+    "random_M0_logit": {
+      "auc": 0.709,
+      "auc_sd": 0.01,
+      "prauc": 0.737,
+      "bal_acc": 0.662,
+      "f1": 0.706,
+      "brier": 0.217
+    },
+    "random_M0_xgb": {
+      "auc": 0.801,
+      "auc_sd": 0.004,
+      "prauc": 0.834,
+      "bal_acc": 0.714,
+      "f1": 0.754,
+      "brier": 0.182
+    },
+    "random_M1_logit": {
+      "auc": 0.718,
+      "auc_sd": 0.011,
+      "prauc": 0.744,
+      "bal_acc": 0.673,
+      "f1": 0.72,
+      "brier": 0.212
+    },
+    "random_M1_xgb": {
+      "auc": 0.891,
+      "auc_sd": 0.019,
+      "prauc": 0.913,
+      "bal_acc": 0.804,
+      "f1": 0.827,
+      "brier": 0.135
+    },
+    "random_M2_logit": {
+      "auc": 0.779,
+      "auc_sd": 0.011,
+      "prauc": 0.829,
+      "bal_acc": 0.719,
+      "f1": 0.735,
+      "brier": 0.192
+    },
+    "random_M2_xgb": {
+      "auc": 0.892,
+      "auc_sd": 0.009,
+      "prauc": 0.917,
+      "bal_acc": 0.803,
+      "f1": 0.818,
+      "brier": 0.134
+    },
+    "random_M3_logit": {
+      "auc": 0.798,
+      "auc_sd": 0.01,
+      "prauc": 0.843,
+      "bal_acc": 0.727,
+      "f1": 0.747,
+      "brier": 0.184
+    },
+    "random_M3_xgb": {
+      "auc": 0.921,
+      "auc_sd": 0.007,
+      "prauc": 0.938,
+      "bal_acc": 0.842,
+      "f1": 0.859,
+      "brier": 0.112
+    },
+    "spatial_M0_logit": {
+      "auc": 0.692,
+      "auc_sd": 0.091,
+      "prauc": 0.702,
+      "bal_acc": 0.643,
+      "f1": 0.667,
+      "brier": 0.224
+    },
+    "spatial_M0_xgb": {
+      "auc": 0.697,
+      "auc_sd": 0.057,
+      "prauc": 0.69,
+      "bal_acc": 0.625,
+      "f1": 0.62,
+      "brier": 0.234
+    },
+    "spatial_M1_logit": {
+      "auc": 0.676,
+      "auc_sd": 0.068,
+      "prauc": 0.664,
+      "bal_acc": 0.641,
+      "f1": 0.661,
+      "brier": 0.227
+    },
+    "spatial_M1_xgb": {
+      "auc": 0.722,
+      "auc_sd": 0.059,
+      "prauc": 0.718,
+      "bal_acc": 0.651,
+      "f1": 0.644,
+      "brier": 0.227
+    },
+    "spatial_M2_logit": {
+      "auc": 0.734,
+      "auc_sd": 0.103,
+      "prauc": 0.745,
+      "bal_acc": 0.679,
+      "f1": 0.652,
+      "brier": 0.207
+    },
+    "spatial_M2_xgb": {
+      "auc": 0.757,
+      "auc_sd": 0.061,
+      "prauc": 0.773,
+      "bal_acc": 0.679,
+      "f1": 0.662,
+      "brier": 0.211
+    },
+    "spatial_M3_logit": {
+      "auc": 0.756,
+      "auc_sd": 0.092,
+      "prauc": 0.764,
+      "bal_acc": 0.698,
+      "f1": 0.696,
+      "brier": 0.199
+    },
+    "spatial_M3_xgb": {
+      "auc": 0.753,
+      "auc_sd": 0.06,
+      "prauc": 0.769,
+      "bal_acc": 0.678,
+      "f1": 0.661,
+      "brier": 0.213
+    }
+  },
+  "calibration_m3_spatial": {
+    "logit": {
+      "slope_mean": 1.02,
+      "slope_range": [
+        0.49,
+        1.47
+      ],
+      "intercept_mean": 0.21
+    },
+    "xgb": {
+      "slope_mean": 0.69,
+      "slope_range": [
+        0.53,
+        0.93
+      ],
+      "intercept_mean": 0.34
+    }
+  },
+  "odds_ratios": {
+    "bld_count_r100": {
+      "or": 4.12,
+      "lo": 3.6,
+      "hi": 4.72,
+      "p": 2.4232966694521366e-93
+    },
+    "ndmi_pre_r100_300": {
+      "or": 0.52,
+      "lo": 0.47,
+      "hi": 0.57,
+      "p": 6.6334302722803025e-40
+    },
+    "ndmi_pre_r30_100": {
+      "or": 0.72,
+      "lo": 0.64,
+      "hi": 0.81,
+      "p": 1.319084228934634e-08
+    },
+    "ndvi_pre_r30_100": {
+      "or": 1.74,
+      "lo": 1.49,
+      "hi": 2.03,
+      "p": 1.2318415594158129e-12
+    },
+    "tpi300_pt": {
+      "or": 1.41,
+      "lo": 1.34,
+      "hi": 1.49,
+      "p": 2.2756775611229747e-38
+    },
+    "yearbuilt": {
+      "or": 0.85,
+      "lo": 0.8,
+      "hi": 0.9,
+      "p": 4.944037541312298e-08
+    },
+    "dist_wildland_m": {
+      "or": 0.72,
+      "lo": 0.66,
+      "hi": 0.79,
+      "p": 3.230089655335865e-13
+    },
+    "dist_deadend_m": {
+      "or": 0.79,
+      "lo": 0.74,
+      "hi": 0.83,
+      "p": 1.6907885367349562e-16
+    },
+    "elevation_pt": {
+      "or": 0.72,
+      "lo": 0.67,
+      "hi": 0.78,
+      "p": 1.8050299610685548e-15
+    },
+    "eastness_pt": {
+      "or": 1.18,
+      "lo": 1.12,
+      "hi": 1.23,
+      "p": 3.7229263912290775e-11
+    },
+    "bld_count_r30": {
+      "or": 1.25,
+      "lo": 1.14,
+      "hi": 1.38,
+      "p": 7.59957078146656e-06
+    },
+    "ndmi_anom_r100_300": {
+      "or": 1.41,
+      "lo": 1.27,
+      "hi": 1.56,
+      "p": 1.6159975444026891e-10
+    },
+    "canopy_cover_r0_30": {
+      "or": 0.88,
+      "lo": 0.82,
+      "hi": 0.95,
+      "p": 0.0016262367634105
+    },
+    "assessed_value_log": {
+      "or": 0.93,
+      "lo": 0.88,
+      "hi": 0.99,
+      "p": 0.0130677386077045
+    }
+  },
+  "shap_top10": [
+    {
+      "predictor": "bld_count_r300",
+      "mean_abs_shap": 0.978
+    },
+    {
+      "predictor": "bld_count_r100",
+      "mean_abs_shap": 0.464
+    },
+    {
+      "predictor": "ndmi_pre_r100_300",
+      "mean_abs_shap": 0.352
+    },
+    {
+      "predictor": "elevation_pt",
+      "mean_abs_shap": 0.339
+    },
+    {
+      "predictor": "ndmi_anom_r100_300",
+      "mean_abs_shap": 0.306
+    },
+    {
+      "predictor": "nn_building_dist_m",
+      "mean_abs_shap": 0.289
+    },
+    {
+      "predictor": "tpi300_pt",
+      "mean_abs_shap": 0.278
+    },
+    {
+      "predictor": "dist_deadend_m",
+      "mean_abs_shap": 0.25
+    },
+    {
+      "predictor": "ndvi_pre_r30_100",
+      "mean_abs_shap": 0.235
+    },
+    {
+      "predictor": "road_len_r300_m_per_km2",
+      "mean_abs_shap": 0.211
+    }
+  ],
+  "scale": [
+    {
+      "auc_mean": 0.721,
+      "auc_sd": 0.073,
+      "prauc_mean": 0.74,
+      "n_predictors": 21,
+      "scale": "0_30"
+    },
+    {
+      "auc_mean": 0.744,
+      "auc_sd": 0.06,
+      "prauc_mean": 0.768,
+      "n_predictors": 22,
+      "scale": "30_100"
+    },
+    {
+      "auc_mean": 0.753,
+      "auc_sd": 0.042,
+      "prauc_mean": 0.767,
+      "n_predictors": 22,
+      "scale": "100_300"
+    },
+    {
+      "auc_mean": 0.756,
+      "auc_sd": 0.051,
+      "prauc_mean": 0.775,
+      "n_predictors": 37,
+      "scale": "all_scales"
+    }
+  ],
+  "blocksize": [
+    {
+      "auc_mean": 0.809,
+      "auc_sd": 0.057,
+      "prauc_mean": 0.826,
+      "n_predictors": 37,
+      "block_m": 500
+    },
+    {
+      "auc_mean": 0.756,
+      "auc_sd": 0.051,
+      "prauc_mean": 0.775,
+      "n_predictors": 37,
+      "block_m": 1000
+    },
+    {
+      "auc_mean": 0.765,
+      "auc_sd": 0.044,
+      "prauc_mean": 0.783,
+      "n_predictors": 37,
+      "block_m": 2000
+    }
+  ],
+  "outcome": [
+    {
+      "auc_mean": 0.765,
+      "auc_sd": 0.047,
+      "prauc_mean": 0.782,
+      "n_predictors": 37,
+      "variant": "destroyed_or_major_residential"
+    },
+    {
+      "auc_mean": 0.759,
+      "auc_sd": 0.053,
+      "prauc_mean": 0.735,
+      "n_predictors": 37,
+      "variant": "destroyed_all_structures"
+    }
+  ],
+  "residual_morans": [
+    {
+      "model": "spatial_M3_xgb",
+      "morans_i": 0.501,
+      "p_sim": 0.005
+    },
+    {
+      "model": "spatial_M3_logit",
+      "morans_i": 0.478,
+      "p_sim": 0.005
+    },
+    {
+      "model": "spatial_M0_xgb",
+      "morans_i": 0.547,
+      "p_sim": 0.005
+    }
+  ],
+  "morans": [
+    {
+      "variable": "destroyed",
+      "morans_i": 0.593,
+      "p_sim": 0.005
+    },
+    {
+      "variable": "ndvi_pre_r30_100",
+      "morans_i": 0.936,
+      "p_sim": 0.005
+    },
+    {
+      "variable": "ndmi_pre_r30_100",
+      "morans_i": 0.886,
+      "p_sim": 0.005
+    },
+    {
+      "variable": "bld_count_r100",
+      "morans_i": 0.964,
+      "p_sim": 0.005
+    },
+    {
+      "variable": "slope_deg_pt",
+      "morans_i": 0.5,
+      "p_sim": 0.005
+    },
+    {
+      "variable": "yearbuilt",
+      "morans_i": 0.309,
+      "p_sim": 0.005
+    },
+    {
+      "variable": "dist_wildland_m",
+      "morans_i": 0.943,
+      "p_sim": 0.005
+    }
+  ],
+  "dnbr_by_class": [
+    {
+      "damage": "Affected (>0-10%)",
+      "count": 619,
+      "mean": 218.4,
+      "median": 204.9,
+      "std": 104.6
+    },
+    {
+      "damage": "Destroyed (>50%)",
+      "count": 5566,
+      "mean": 235.7,
+      "median": 235.5,
+      "std": 98.5
+    },
+    {
+      "damage": "Major (25-50%)",
+      "count": 58,
+      "mean": 188.5,
+      "median": 170.1,
+      "std": 131.6
+    },
+    {
+      "damage": "Minor (10-25%)",
+      "count": 143,
+      "mean": 196.7,
+      "median": 181.9,
+      "std": 106.9
+    },
+    {
+      "damage": "No Damage",
+      "count": 3497,
+      "mean": 159.2,
+      "median": 140.5,
+      "std": 111.3
+    }
+  ],
+  "severity_fractions": [
+    {
+      "severity": "Unburned/Low",
+      "fraction": 0.05,
+      "area_km2": 4.836
+    },
+    {
+      "severity": "Low",
+      "fraction": 0.098,
+      "area_km2": 9.429
+    },
+    {
+      "severity": "Moderate",
+      "fraction": 0.142,
+      "area_km2": 13.607
+    },
+    {
+      "severity": "High",
+      "fraction": 0.71,
+      "area_km2": 68.216
+    }
+  ],
+  "recovery_ratios": {
+    "1": {
+      "min_ratio": 0.54,
+      "first_month_ratio": 0.54,
+      "last_month_ratio": 0.77,
+      "max_ratio": 1.12
+    },
+    "2": {
+      "min_ratio": 0.4,
+      "first_month_ratio": 0.4,
+      "last_month_ratio": 0.71,
+      "max_ratio": 1.16
+    },
+    "3": {
+      "min_ratio": 0.29,
+      "first_month_ratio": 0.29,
+      "last_month_ratio": 0.64,
+      "max_ratio": 1.15
+    }
+  },
+  "climate": {
+    "octdec_2024_mm": 5.5,
+    "octdec_median_mm": 111.0,
+    "octdec_2024_rank": 2,
+    "n_years": 45
+  },
+  "event_weather": {
+    "peak_wind_ms": 7.8,
+    "min_rh_pct": 9.6
+  },
+  "community": {
+    "n_tracts": 12,
+    "svi_max": 0.26,
+    "spearman_svi_destroyed": {
+      "rho": 0.29,
+      "p": 0.35,
+      "n": 12
+    },
+    "med_dist_fire_km_range": [
+      0.7,
+      7.4
+    ]
+  },
+  "scenes": {
+    "baseline_2022": 15,
+    "baseline_2023": 12,
+    "baseline_2024": 15,
+    "postfire": 5,
+    "prefire": 16
+  },
+  "eda": {
+    "n_high_corr_pairs": 7,
+    "n_vif_over_10": 12
+  }
+}
