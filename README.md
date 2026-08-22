@@ -13,9 +13,9 @@ accompanying:
 **Contact:** mnarimani@ucdavis.edu
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![DOI](https://img.shields.io/badge/DOI-zenodo-blue.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22061862-blue.svg)](https://doi.org/10.5281/zenodo.22061862)
 
-> **Zenodo DOI:** *(updated after deposit publication)*
+> **Zenodo DOI:** https://doi.org/10.5281/zenodo.22061862
 
 This repository is the **public replication package**. It contains only audited `.py`
 scripts and analysis-ready products needed to reproduce the paper’s core results.
@@ -135,8 +135,8 @@ Modeled after the public replication style of
   year      = {2026},
   version   = {1.0.0},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.XXXXXXX},
-  url       = {https://doi.org/10.5281/zenodo.XXXXXXX}
+  doi       = {10.5281/zenodo.22061862},
+  url       = {https://doi.org/10.5281/zenodo.22061862}
 }
 
 @software{Farajpoor_Narimani_Palisades_Urban_Wildfire_GeoAI_code,
@@ -144,7 +144,7 @@ Modeled after the public replication style of
   title  = {Palisades Urban Wildfire GeoAI: replication code},
   year   = {2026},
   url    = {https://github.com/MohammadrezaNarimaniUCDavis/Palisades_Urban_Wildfire_GeoAI},
-  note   = {Companion dataset DOI: https://doi.org/10.5281/zenodo.XXXXXXX}
+  note   = {Companion dataset DOI: https://doi.org/10.5281/zenodo.22061862}
 }
 ```
 

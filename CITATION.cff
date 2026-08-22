@@ -29,3 +29,9 @@ keywords:
   - Palisades Fire
   - building density
   - vegetation moisture
+
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22061862
+    description: Companion geospatial dataset on Zenodo
+url: "https://doi.org/10.5281/zenodo.22061862"
