@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this software or derived data, please cite it as below."
+message: "If you use this software or derived data, please cite the arXiv preprint (preferred) and this repository as below."
 type: software
 title: "Palisades Urban Wildfire GeoAI: replication code"
 authors:
@@ -30,8 +30,30 @@ keywords:
   - building density
   - vegetation moisture
 
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Farajpoor
+      given-names: Parastoo
+    - family-names: Narimani
+      given-names: Mohammadreza
+  title: "The spatial anatomy of urban wildfire vulnerability: a spatially validated GeoAI framework reveals the roles of building density and vegetation moisture in structure loss during the 2025 Palisades Fire"
+  year: 2026
+  doi: "10.48550/arXiv.2608.22293"
+  url: "https://arxiv.org/abs/2608.22293"
+  identifiers:
+    - type: other
+      value: "arXiv:2608.22293"
+      description: arXiv preprint identifier
+    - type: doi
+      value: "10.48550/arXiv.2608.22293"
+      description: arXiv-issued DOI
+
 identifiers:
+  - type: other
+    value: "arXiv:2608.22293"
+    description: Companion preprint on arXiv
   - type: doi
     value: 10.5281/zenodo.22061862
     description: Companion geospatial dataset on Zenodo
-url: "https://doi.org/10.5281/zenodo.22061862"
+url: "https://arxiv.org/abs/2608.22293"

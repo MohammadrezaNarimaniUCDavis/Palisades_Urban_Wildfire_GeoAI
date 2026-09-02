@@ -1,25 +1,34 @@
 # Palisades Urban Wildfire GeoAI
 
 Public replication package for a **spatially validated GeoAI** analysis of
-structure destruction in the **January 2025 Palisades Fire** (Los Angeles, California),
-accompanying:
+structure destruction in the **January 2025 Palisades Fire** (Los Angeles, California).
 
-> *The spatial anatomy of urban wildfire vulnerability: a spatially validated GeoAI
-> framework reveals the roles of building density and vegetation moisture in structure
-> loss during the 2025 Palisades Fire*
+> Farajpoor, P., & Narimani, M. (2026). *The spatial anatomy of urban wildfire vulnerability:
+> a spatially validated GeoAI framework reveals the roles of building density and vegetation
+> moisture in structure loss during the 2025 Palisades Fire.*
+> [arXiv:2608.22293](https://arxiv.org/abs/2608.22293)
+> ([doi:10.48550/arXiv.2608.22293](https://doi.org/10.48550/arXiv.2608.22293)).
 
 **Authors:** Parastoo Farajpoor and Mohammadreza Narimani  
 **Affiliation:** Department of Biological and Agricultural Engineering, UC Davis  
 **Contact:** mnarimani@ucdavis.edu
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![arXiv](https://img.shields.io/badge/arXiv-2608.22293-b31b1b.svg)](https://arxiv.org/abs/2608.22293)
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22061862-blue.svg)](https://doi.org/10.5281/zenodo.22061862)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-> **Zenodo DOI:** https://doi.org/10.5281/zenodo.22061862
+| Resource | Link |
+|---|---|
+| **Paper (arXiv)** | https://arxiv.org/abs/2608.22293 |
+| **Dataset (Zenodo)** | https://doi.org/10.5281/zenodo.22061862 |
+| **This code** | https://github.com/MohammadrezaNarimaniUCDavis/Palisades_Urban_Wildfire_GeoAI |
 
 This repository is the **public replication package**. It contains only audited `.py`
 scripts and analysis-ready products needed to reproduce the paper’s core results.
 The authors’ full working archive remains private.
+
+**If you use this work, please cite the arXiv preprint** (preferred), plus the Zenodo
+dataset and/or this repository as appropriate (see [Citation](#citation)).
 
 ---
 
@@ -128,6 +137,23 @@ Modeled after the public replication style of
 
 ## Citation
 
+**Preferred citation (paper):**
+
+```bibtex
+@article{Farajpoor_Narimani_Palisades_2026_arXiv,
+  title         = {The spatial anatomy of urban wildfire vulnerability: a spatially validated GeoAI framework reveals the roles of building density and vegetation moisture in structure loss during the 2025 Palisades Fire},
+  author        = {Farajpoor, Parastoo and Narimani, Mohammadreza},
+  year          = {2026},
+  eprint        = {2608.22293},
+  archivePrefix = {arXiv},
+  primaryClass  = {physics.geo-ph},
+  doi           = {10.48550/arXiv.2608.22293},
+  url           = {https://arxiv.org/abs/2608.22293}
+}
+```
+
+**Dataset (Zenodo):**
+
 ```bibtex
 @dataset{Farajpoor_Narimani_Palisades_Urban_Wildfire_GeoAI_2026,
   author    = {Farajpoor, Parastoo and Narimani, Mohammadreza},
@@ -138,15 +164,21 @@ Modeled after the public replication style of
   doi       = {10.5281/zenodo.22061862},
   url       = {https://doi.org/10.5281/zenodo.22061862}
 }
+```
 
+**Replication code (this repository):**
+
+```bibtex
 @software{Farajpoor_Narimani_Palisades_Urban_Wildfire_GeoAI_code,
   author = {Farajpoor, Parastoo and Narimani, Mohammadreza},
   title  = {Palisades Urban Wildfire GeoAI: replication code},
   year   = {2026},
   url    = {https://github.com/MohammadrezaNarimaniUCDavis/Palisades_Urban_Wildfire_GeoAI},
-  note   = {Companion dataset DOI: https://doi.org/10.5281/zenodo.22061862}
+  note   = {Companion paper: https://arxiv.org/abs/2608.22293; dataset DOI: https://doi.org/10.5281/zenodo.22061862}
 }
 ```
+
+GitHub’s “Cite this repository” button uses [`CITATION.cff`](CITATION.cff).
 
 ---
 
